@@ -17,12 +17,12 @@ namespace Portfolio.Services
             items = new List<Event>();
             var mockItems = new List<Event>
             {
-                new Event { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Event { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Event { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Event { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Event { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Event { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event 1", Location="Location 1", EventType = "Type 1", EventDate = new DateTime(2018,1,1) },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event 2", Location="Location 2", EventType = "Type 2", EventDate = new DateTime(2018,2,2) },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event 3", Location="Location 3", EventType = "Type 1", EventDate = new DateTime(2018,3,3) },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event 4", Location="Location 4", EventType = "Type 2", EventDate = new DateTime(2018,4,4) },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event 5", Location="Location 5", EventType = "Type 1", EventDate = new DateTime(2018,5,5) },
+                new Event { Id = Guid.NewGuid().ToString(), Title = "Event 6", Location="Location 6", EventType = "Type 2", EventDate = new DateTime(2018,6,6) },
             };
 
             foreach (var item in mockItems)

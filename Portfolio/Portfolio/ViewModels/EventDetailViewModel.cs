@@ -21,8 +21,7 @@ namespace Portfolio.ViewModels
             set
             {
                 Set(ref _event, value);
-
-                Title = value?.Text;
+                Title = value?.Title;
             }
         }
     }
